@@ -1,0 +1,3 @@
+In order to obtain the item I have chosen
+As a buyer
+I want to be able to purchase the item
