@@ -10,31 +10,10 @@
 
     <name>Sample Thucydides project</name>
 
-    <repositories>
-        <repository>
-            <id>sonatype-releases</id>
-            <url>https://oss.sonatype.org/content/repositories/releases</url>
-        </repository>
-        <repository>
-            <id>sonatype-snapshots</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </repository>
-    </repositories>
-    <pluginRepositories>
-        <pluginRepository>
-            <id>sonatype-snapshots</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </pluginRepository>
-        <pluginRepository>
-            <id>sonatype-releases</id>
-            <url>https://oss.sonatype.org/content/repositories/releases</url>
-        </pluginRepository>
-    </pluginRepositories>
-
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <thucydides.version>0.9.10-RC5</thucydides.version>
-        <thucydides.jbehave.version>0.9.0</thucydides.jbehave.version>
+        <thucydides.version>0.9.12</thucydides.version>
+        <thucydides.jbehave.version>0.9.12</thucydides.jbehave.version>
         <webdriver.driver>firefox</webdriver.driver>
         <thucydides.project.key>THUCJBEHAVE</thucydides.project.key>
     </properties>
