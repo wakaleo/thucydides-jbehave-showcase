@@ -1,0 +1,4 @@
+Build a wishlish
+In order to encourage friends and family to buy me presents
+As a customer
+I want to be able to build a wishlist of items I would like

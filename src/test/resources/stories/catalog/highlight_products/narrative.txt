@@ -1,0 +1,4 @@
+Highlight Products
+In order to bring customers' attention to certain products
+As a retailer
+I want to be able to make certain products more prominently visible

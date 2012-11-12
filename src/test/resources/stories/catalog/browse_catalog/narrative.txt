@@ -1,0 +1,4 @@
+Browse Catalog
+In order to find items that I would like to buy
+As a customer
+I want to be able to browse through the catalog

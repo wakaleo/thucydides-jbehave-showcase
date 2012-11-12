@@ -12,10 +12,10 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <thucydides.version>0.9.12</thucydides.version>
-        <thucydides.jbehave.version>0.9.12</thucydides.jbehave.version>
+        <thucydides.version>0.9.72-SNAPSHOT</thucydides.version>
+        <thucydides.jbehave.version>0.9.72-SNAPSHOT</thucydides.jbehave.version>
         <webdriver.driver>firefox</webdriver.driver>
-        <thucydides.project.key>THUCJBEHAVE</thucydides.project.key>
+        <thucydides.project.key>BIGCOMMERCE</thucydides.project.key>
     </properties>
 
     <dependencies>
@@ -43,12 +43,12 @@
         <dependency>
             <groupId>org.codehaus.groovy</groupId>
             <artifactId>groovy-all</artifactId>
-            <version>1.8.6</version>
+            <version>2.0.5</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.8.2</version>
+            <version>4.10</version>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -71,8 +71,7 @@
                 <version>2.10</version>
                 <configuration>
                     <argLine>-Xmx512m</argLine>
-                    <systemPropertyVariables>
-                    </systemPropertyVariables>
+                    <includes><include>**/*TestSuite.*</include></includes>
                 </configuration>
             </plugin>
             <plugin>
@@ -82,27 +81,29 @@
                 <configuration>
                     <source>1.5</source>
                     <target>1.5</target>
+                    <compilerId>groovy-eclipse-compiler</compilerId>
                 </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.codehaus.groovy</groupId>
+                        <artifactId>groovy-eclipse-compiler</artifactId>
+                        <version>2.7.0-01</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.groovy</groupId>
+                <artifactId>groovy-eclipse-compiler</artifactId>
+                <version>2.7.0-01</version>
+                <extensions>true</extensions>
             </plugin>
             <plugin>
                 <groupId>net.thucydides.maven.plugins</groupId>
                 <artifactId>maven-thucydides-plugin</artifactId>
-                <version>${thucydides.version}</version>
+                <version>0.9.72-SNAPSHOT</version>
                 <configuration>
                     <projectKey>${thucydides.project.key}</projectKey>
                 </configuration>
-                <dependencies>
-                    <dependency>
-                        <groupId>net.thucydides</groupId>
-                        <artifactId>thucydides-core</artifactId>
-                        <version>${thucydides.version}</version>
-                    </dependency>
-                    <dependency>
-                        <groupId>${project.groupId}</groupId>
-                        <artifactId>${project.artifactId}</artifactId>
-                        <version>${project.version}</version>
-                    </dependency>
-                </dependencies>
                 <executions>
                     <execution>
                         <id>thucydides-reports</id>

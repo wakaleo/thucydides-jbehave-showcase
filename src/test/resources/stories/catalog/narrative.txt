@@ -1,0 +1,4 @@
+Catalog
+In order for customers to find items more effectively
+As a retailer
+I want to be able to organize products by category and sub-category

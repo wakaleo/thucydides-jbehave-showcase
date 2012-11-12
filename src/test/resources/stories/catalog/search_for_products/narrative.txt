@@ -1,0 +1,4 @@
+Search
+In order to find the product I want
+As a customer
+I want to be able to search for products
